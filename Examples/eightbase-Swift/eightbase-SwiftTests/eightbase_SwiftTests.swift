@@ -1,15 +1,15 @@
 //
-//  eightbaseTests.swift
-//  8baseTests
+//  eightbase_SwiftTests.swift
+//  eightbase-SwiftTests
 //
-//  Created by Vladyslav Vshevtsov on 1/1/19.
+//  Created by Vladyslav Vshevtsov on 1/2/19.
 //  Copyright © 2019 8base. All rights reserved.
 //
 
 import XCTest
-@testable import eightbase
+@testable import eightbase_Swift
 
-class eightbaseTests: XCTestCase {
+class eightbase_SwiftTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

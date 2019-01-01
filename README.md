@@ -1,1 +1,3 @@
-# 8base
+# EightBase
+
+A description of this package.

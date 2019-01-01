@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		324B78697CFF05ECB93D6538 /* Pods_8baseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53D101961CD6D2333052B8 /* Pods_8baseTests.framework */; };
-		89BB033A21DBDDC1002BE069 /* eightbase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BB033021DBDDC1002BE069 /* eightbase.framework */; };
-		89BB033F21DBDDC1002BE069 /* eightbaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB033E21DBDDC1002BE069 /* eightbaseTests.swift */; };
-		89BB034121DBDDC1002BE069 /* eightbase.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BB033321DBDDC1002BE069 /* eightbase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D298421E1BE9066C97A77D9 /* Pods_8base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570885244C9BBFB3C3A2B500 /* Pods_8base.framework */; };
+		89BB033A21DBDDC1002BE069 /* EightBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BB033021DBDDC1002BE069 /* EightBase.framework */; };
+		89BB035E21DBFFBA002BE069 /* EightBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB035621DBFFB9002BE069 /* EightBase.swift */; };
+		89BB036821DC0304002BE069 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89BB036621DC0304002BE069 /* README.md */; };
+		89BB036C21DC12B5002BE069 /* EightBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB035B21DBFFB9002BE069 /* EightBaseTests.swift */; };
+		96296C6273AA438384BA8F2D /* Pods_EightBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA1FD258CE32F54C527C215 /* Pods_EightBase.framework */; };
+		F3ABB2AEA8AA3E1E1519696E /* Pods_EightBaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05D55913C6C43495B1B8D9 /* Pods_EightBaseTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,18 +26,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A53D101961CD6D2333052B8 /* Pods_8baseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_8baseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		390C5AEA5FA34A7254DC35BB /* Pods-8baseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-8baseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-8baseTests/Pods-8baseTests.release.xcconfig"; sourceTree = "<group>"; };
-		4CA5BA8AA0F4AA7C455CDF8E /* Pods-8baseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-8baseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-8baseTests/Pods-8baseTests.debug.xcconfig"; sourceTree = "<group>"; };
-		570885244C9BBFB3C3A2B500 /* Pods_8base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_8base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89BB033021DBDDC1002BE069 /* eightbase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eightbase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89BB033321DBDDC1002BE069 /* eightbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eightbase.h; sourceTree = "<group>"; };
-		89BB033421DBDDC1002BE069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89BB033921DBDDC1002BE069 /* 8baseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 8baseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89BB033E21DBDDC1002BE069 /* eightbaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eightbaseTests.swift; sourceTree = "<group>"; };
-		89BB034021DBDDC1002BE069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B48DA0062F7D14FE63C5DB36 /* Pods-8base.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-8base.release.xcconfig"; path = "Pods/Target Support Files/Pods-8base/Pods-8base.release.xcconfig"; sourceTree = "<group>"; };
-		FAD3174B79A2C8DF0256DACA /* Pods-8base.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-8base.debug.xcconfig"; path = "Pods/Target Support Files/Pods-8base/Pods-8base.debug.xcconfig"; sourceTree = "<group>"; };
+		13CEAB98C05495C45CA96470 /* Pods-EightBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EightBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EightBase/Pods-EightBase.debug.xcconfig"; sourceTree = "<group>"; };
+		25F85A520F23D517C77E7372 /* Pods-EightBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EightBaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EightBaseTests/Pods-EightBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DA1FD258CE32F54C527C215 /* Pods_EightBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EightBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FE9BCD8234AB1CB6F39949 /* Pods-EightBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EightBaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EightBaseTests/Pods-EightBaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		89BB033021DBDDC1002BE069 /* EightBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EightBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BB033921DBDDC1002BE069 /* EightBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EightBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BB035121DBFD70002BE069 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		89BB035621DBFFB9002BE069 /* EightBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightBase.swift; sourceTree = "<group>"; };
+		89BB035921DBFFB9002BE069 /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		89BB035B21DBFFB9002BE069 /* EightBaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightBaseTests.swift; sourceTree = "<group>"; };
+		89BB035C21DBFFB9002BE069 /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		89BB036521DC0304002BE069 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89BB036621DC0304002BE069 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		89BB036921DC0FEE002BE069 /* EightBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EightBase.h; sourceTree = "<group>"; };
+		89BB036A21DC108D002BE069 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		89BB039521DC178A002BE069 /* EightBase.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = EightBase.podspec; sourceTree = "<group>"; };
+		EFE7D8AE3FAD5E80DE8935A7 /* Pods-EightBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EightBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-EightBase/Pods-EightBase.release.xcconfig"; sourceTree = "<group>"; };
+		FB05D55913C6C43495B1B8D9 /* Pods_EightBaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EightBaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D298421E1BE9066C97A77D9 /* Pods_8base.framework in Frameworks */,
+				96296C6273AA438384BA8F2D /* Pods_EightBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BB033A21DBDDC1002BE069 /* eightbase.framework in Frameworks */,
-				324B78697CFF05ECB93D6538 /* Pods_8baseTests.framework in Frameworks */,
+				89BB033A21DBDDC1002BE069 /* EightBase.framework in Frameworks */,
+				F3ABB2AEA8AA3E1E1519696E /* Pods_EightBaseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +70,9 @@
 		23EC41265F604FBC7634D440 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				570885244C9BBFB3C3A2B500 /* Pods_8base.framework */,
-				1A53D101961CD6D2333052B8 /* Pods_8baseTests.framework */,
+				89BB036A21DC108D002BE069 /* XCTest.framework */,
+				3DA1FD258CE32F54C527C215 /* Pods_EightBase.framework */,
+				FB05D55913C6C43495B1B8D9 /* Pods_EightBaseTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -72,8 +80,12 @@
 		89BB032621DBDDC1002BE069 = {
 			isa = PBXGroup;
 			children = (
-				89BB033221DBDDC1002BE069 /* 8base */,
-				89BB033D21DBDDC1002BE069 /* 8baseTests */,
+				89BB036621DC0304002BE069 /* README.md */,
+				89BB039521DC178A002BE069 /* EightBase.podspec */,
+				89BB035121DBFD70002BE069 /* Package.swift */,
+				89BB036521DC0304002BE069 /* Info.plist */,
+				89BB035321DBFFB9002BE069 /* Sources */,
+				89BB035821DBFFB9002BE069 /* Tests */,
 				89BB033121DBDDC1002BE069 /* Products */,
 				ADEDA223823C4A6873CEE003 /* Pods */,
 				23EC41265F604FBC7634D440 /* Frameworks */,
@@ -83,37 +95,54 @@
 		89BB033121DBDDC1002BE069 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				89BB033021DBDDC1002BE069 /* eightbase.framework */,
-				89BB033921DBDDC1002BE069 /* 8baseTests.xctest */,
+				89BB033021DBDDC1002BE069 /* EightBase.framework */,
+				89BB033921DBDDC1002BE069 /* EightBaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		89BB033221DBDDC1002BE069 /* 8base */ = {
+		89BB035321DBFFB9002BE069 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				89BB033321DBDDC1002BE069 /* eightbase.h */,
-				89BB033421DBDDC1002BE069 /* Info.plist */,
+				89BB035421DBFFB9002BE069 /* EightBase */,
 			);
-			path = 8base;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		89BB033D21DBDDC1002BE069 /* 8baseTests */ = {
+		89BB035421DBFFB9002BE069 /* EightBase */ = {
 			isa = PBXGroup;
 			children = (
-				89BB033E21DBDDC1002BE069 /* eightbaseTests.swift */,
-				89BB034021DBDDC1002BE069 /* Info.plist */,
+				89BB036921DC0FEE002BE069 /* EightBase.h */,
+				89BB035621DBFFB9002BE069 /* EightBase.swift */,
 			);
-			path = 8baseTests;
+			path = EightBase;
+			sourceTree = "<group>";
+		};
+		89BB035821DBFFB9002BE069 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				89BB035921DBFFB9002BE069 /* LinuxMain.swift */,
+				89BB035A21DBFFB9002BE069 /* EightBaseTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		89BB035A21DBFFB9002BE069 /* EightBaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				89BB035B21DBFFB9002BE069 /* EightBaseTests.swift */,
+				89BB035C21DBFFB9002BE069 /* XCTestManifests.swift */,
+			);
+			path = EightBaseTests;
 			sourceTree = "<group>";
 		};
 		ADEDA223823C4A6873CEE003 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FAD3174B79A2C8DF0256DACA /* Pods-8base.debug.xcconfig */,
-				B48DA0062F7D14FE63C5DB36 /* Pods-8base.release.xcconfig */,
-				4CA5BA8AA0F4AA7C455CDF8E /* Pods-8baseTests.debug.xcconfig */,
-				390C5AEA5FA34A7254DC35BB /* Pods-8baseTests.release.xcconfig */,
+				13CEAB98C05495C45CA96470 /* Pods-EightBase.debug.xcconfig */,
+				EFE7D8AE3FAD5E80DE8935A7 /* Pods-EightBase.release.xcconfig */,
+				25F85A520F23D517C77E7372 /* Pods-EightBaseTests.debug.xcconfig */,
+				45FE9BCD8234AB1CB6F39949 /* Pods-EightBaseTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -125,16 +154,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BB034121DBDDC1002BE069 /* eightbase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		89BB032F21DBDDC1002BE069 /* eightbase */ = {
+		89BB032F21DBDDC1002BE069 /* EightBase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89BB034421DBDDC1002BE069 /* Build configuration list for PBXNativeTarget "eightbase" */;
+			buildConfigurationList = 89BB034421DBDDC1002BE069 /* Build configuration list for PBXNativeTarget "EightBase" */;
 			buildPhases = (
 				FE1BE449A76E261CBFE5A126 /* [CP] Check Pods Manifest.lock */,
 				89BB032B21DBDDC1002BE069 /* Headers */,
@@ -146,14 +174,14 @@
 			);
 			dependencies = (
 			);
-			name = eightbase;
+			name = EightBase;
 			productName = 8base;
-			productReference = 89BB033021DBDDC1002BE069 /* eightbase.framework */;
+			productReference = 89BB033021DBDDC1002BE069 /* EightBase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		89BB033821DBDDC1002BE069 /* 8baseTests */ = {
+		89BB033821DBDDC1002BE069 /* EightBaseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89BB034721DBDDC1002BE069 /* Build configuration list for PBXNativeTarget "8baseTests" */;
+			buildConfigurationList = 89BB034721DBDDC1002BE069 /* Build configuration list for PBXNativeTarget "EightBaseTests" */;
 			buildPhases = (
 				8AA75682B59891FC4C189AC8 /* [CP] Check Pods Manifest.lock */,
 				89BB033521DBDDC1002BE069 /* Sources */,
@@ -166,9 +194,9 @@
 			dependencies = (
 				89BB033C21DBDDC1002BE069 /* PBXTargetDependency */,
 			);
-			name = 8baseTests;
+			name = EightBaseTests;
 			productName = 8baseTests;
-			productReference = 89BB033921DBDDC1002BE069 /* 8baseTests.xctest */;
+			productReference = 89BB033921DBDDC1002BE069 /* EightBaseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -183,13 +211,14 @@
 				TargetAttributes = {
 					89BB032F21DBDDC1002BE069 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					89BB033821DBDDC1002BE069 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 89BB032A21DBDDC1002BE069 /* Build configuration list for PBXProject "8base" */;
+			buildConfigurationList = 89BB032A21DBDDC1002BE069 /* Build configuration list for PBXProject "EightBase" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -201,8 +230,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				89BB032F21DBDDC1002BE069 /* eightbase */,
-				89BB033821DBDDC1002BE069 /* 8baseTests */,
+				89BB032F21DBDDC1002BE069 /* EightBase */,
+				89BB033821DBDDC1002BE069 /* EightBaseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BB036821DC0304002BE069 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +263,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-8baseTests/Pods-8baseTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-EightBaseTests/Pods-EightBaseTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
 				"${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework",
 				"${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework",
@@ -248,7 +278,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-8baseTests/Pods-8baseTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EightBaseTests/Pods-EightBaseTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8AA75682B59891FC4C189AC8 /* [CP] Check Pods Manifest.lock */ = {
@@ -266,7 +296,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-8baseTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EightBaseTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -288,7 +318,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-8base-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EightBase-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -302,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BB035E21DBFFBA002BE069 /* EightBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BB033F21DBDDC1002BE069 /* eightbaseTests.swift in Sources */,
+				89BB036C21DC12B5002BE069 /* EightBaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +349,7 @@
 /* Begin PBXTargetDependency section */
 		89BB033C21DBDDC1002BE069 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 89BB032F21DBDDC1002BE069 /* eightbase */;
+			target = 89BB032F21DBDDC1002BE069 /* EightBase */;
 			targetProxy = 89BB033B21DBDDC1002BE069 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -376,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -434,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -448,16 +479,17 @@
 		};
 		89BB034521DBDDC1002BE069 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAD3174B79A2C8DF0256DACA /* Pods-8base.debug.xcconfig */;
+			baseConfigurationReference = 13CEAB98C05495C45CA96470 /* Pods-EightBase.debug.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = 8base/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,9 +497,10 @@
 					"@loader_path/Frameworks",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.8base.eightbase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.8base.EightBase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -475,23 +508,24 @@
 		};
 		89BB034621DBDDC1002BE069 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B48DA0062F7D14FE63C5DB36 /* Pods-8base.release.xcconfig */;
+			baseConfigurationReference = EFE7D8AE3FAD5E80DE8935A7 /* Pods-EightBase.release.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = 8base/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.8base.eightbase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.8base.EightBase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -501,8 +535,9 @@
 		};
 		89BB034821DBDDC1002BE069 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CA5BA8AA0F4AA7C455CDF8E /* Pods-8baseTests.debug.xcconfig */;
+			baseConfigurationReference = 25F85A520F23D517C77E7372 /* Pods-EightBaseTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = 8baseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -519,8 +554,9 @@
 		};
 		89BB034921DBDDC1002BE069 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 390C5AEA5FA34A7254DC35BB /* Pods-8baseTests.release.xcconfig */;
+			baseConfigurationReference = 45FE9BCD8234AB1CB6F39949 /* Pods-EightBaseTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = 8baseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -538,7 +574,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		89BB032A21DBDDC1002BE069 /* Build configuration list for PBXProject "8base" */ = {
+		89BB032A21DBDDC1002BE069 /* Build configuration list for PBXProject "EightBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				89BB034221DBDDC1002BE069 /* Debug */,
@@ -547,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89BB034421DBDDC1002BE069 /* Build configuration list for PBXNativeTarget "eightbase" */ = {
+		89BB034421DBDDC1002BE069 /* Build configuration list for PBXNativeTarget "EightBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				89BB034521DBDDC1002BE069 /* Debug */,
@@ -556,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89BB034721DBDDC1002BE069 /* Build configuration list for PBXNativeTarget "8baseTests" */ = {
+		89BB034721DBDDC1002BE069 /* Build configuration list for PBXNativeTarget "EightBaseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				89BB034821DBDDC1002BE069 /* Debug */,
