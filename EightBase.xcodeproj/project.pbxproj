@@ -11,6 +11,7 @@
 		89BB035E21DBFFBA002BE069 /* EightBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB035621DBFFB9002BE069 /* EightBase.swift */; };
 		89BB036821DC0304002BE069 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89BB036621DC0304002BE069 /* README.md */; };
 		89BB036C21DC12B5002BE069 /* EightBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB035B21DBFFB9002BE069 /* EightBaseTests.swift */; };
+		89BB03F621DC216A002BE069 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 89BB03F521DC216A002BE069 /* LICENSE */; };
 		96296C6273AA438384BA8F2D /* Pods_EightBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA1FD258CE32F54C527C215 /* Pods_EightBase.framework */; };
 		F3ABB2AEA8AA3E1E1519696E /* Pods_EightBaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05D55913C6C43495B1B8D9 /* Pods_EightBaseTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		89BB036921DC0FEE002BE069 /* EightBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EightBase.h; sourceTree = "<group>"; };
 		89BB036A21DC108D002BE069 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		89BB039521DC178A002BE069 /* EightBase.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = EightBase.podspec; sourceTree = "<group>"; };
+		89BB03F521DC216A002BE069 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EFE7D8AE3FAD5E80DE8935A7 /* Pods-EightBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EightBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-EightBase/Pods-EightBase.release.xcconfig"; sourceTree = "<group>"; };
 		FB05D55913C6C43495B1B8D9 /* Pods_EightBaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EightBaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 		89BB032621DBDDC1002BE069 = {
 			isa = PBXGroup;
 			children = (
+				89BB03F521DC216A002BE069 /* LICENSE */,
 				89BB036621DC0304002BE069 /* README.md */,
 				89BB039521DC178A002BE069 /* EightBase.podspec */,
 				89BB035121DBFD70002BE069 /* Package.swift */,
@@ -241,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BB03F621DC216A002BE069 /* LICENSE in Resources */,
 				89BB036821DC0304002BE069 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
