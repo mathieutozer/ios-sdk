@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "EightBase"
-s.version      = "1.0.0"
+s.version      = "0.0.1"
 s.summary      = "EightBase library"
 s.homepage     = "http://8base.com"
 s.authors      = "8base"
