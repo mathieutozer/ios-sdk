@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  eightbase-Swift
+//  Example
 //
-//  Created by Vladyslav Vshevtsov on 1/2/19.
+//  Created by Vladyslav Vshevtsov on 1/8/19.
 //  Copyright © 2019 8base. All rights reserved.
 //
 
@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        EightBase.
+        let a = EightBase.auth(with: "https://api.8base.com/cjnopo7vd000c01pcq8xzbs44")
         
         return true
     }
@@ -45,9 +45,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-//    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
-//        return EightBase.resumeAuth(url, options: options)
-//    }
 
 }
 
