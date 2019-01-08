@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let a = EightBase.auth(with: "https://api.8base.com/cjnopo7vd000c01pcq8xzbs44")
+        EightBase.auth(with: "https://api.8base.com/cjnopo7vd000c01pcq8xzbs44")
         
         return true
     }

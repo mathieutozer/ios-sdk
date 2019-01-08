@@ -65,8 +65,23 @@ func initApollo() {
         print("Endpoint undefined")
         return
     }
+    guard credentialsManager.hasValid() else {
+        print("Invalid credentials")
+        return
+    }
+    var idToken: String? = nil
+    credentialsManager.credentials { error, credentials in
+        guard error == nil, let credentials = credentials else {
+            print("Failed to instantly retrieve the credentials with error: \(String(describing: error))")
+            return
+        }
+        // Valid credentials, you can access the token properties such as `idToken`, `accessToken`.
+        idToken = credentials.idToken
+    }
     let url = URL(string: baseEndPoint!)!
-    let client = ApolloClient(networkTransport: AlamofireTransport(url: url))
+    let headers = ["Authorization": "bearer \(idToken!)"]
+    let transport = AlamofireTransport(url: url, headers: headers)
+    let client = ApolloClient(networkTransport: transport)
     Apollo = client
 }
 
