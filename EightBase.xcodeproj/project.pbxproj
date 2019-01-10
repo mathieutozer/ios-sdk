@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		893D8AA621E4183100961B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893D8AA521E4183100961B28 /* AppDelegate.swift */; };
-		893D8AA821E4183100961B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893D8AA721E4183100961B28 /* ViewController.swift */; };
+		893D8AA821E4183100961B28 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893D8AA721E4183100961B28 /* DashboardViewController.swift */; };
 		893D8AAB21E4183100961B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893D8AA921E4183100961B28 /* Main.storyboard */; };
 		893D8AAD21E4183300961B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 893D8AAC21E4183300961B28 /* Assets.xcassets */; };
 		893D8AB021E4183300961B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893D8AAE21E4183300961B28 /* LaunchScreen.storyboard */; };
 		893D8AB621E41DA000961B28 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 893D8AB521E41DA000961B28 /* Auth0.plist */; };
+		8984FAFA21E6C02B00F81351 /* BrokersViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FAF921E6C02B00F81351 /* BrokersViewController.graphql */; };
+		8984FAFC21E6C33A00F81351 /* BrokersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FAFB21E6C33A00F81351 /* BrokersViewController.swift */; };
+		8984FAFD21E6C74700F81351 /* EightBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BB033021DBDDC1002BE069 /* EightBase.framework */; };
+		8984FB0021E7DCDE00F81351 /* BrokerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FAFF21E7DCDE00F81351 /* BrokerTableViewCell.swift */; };
+		8984FB0221E7DCF400F81351 /* BrokerTableViewCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0121E7DCF400F81351 /* BrokerTableViewCell.graphql */; };
+		8984FB0421E7E23D00F81351 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0321E7E23D00F81351 /* schema.json */; };
+		8984FB0621E7F3A500F81351 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB0521E7F3A400F81351 /* API.swift */; };
 		89BB033A21DBDDC1002BE069 /* EightBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BB033021DBDDC1002BE069 /* EightBase.framework */; };
 		89BB035E21DBFFBA002BE069 /* EightBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB035621DBFFB9002BE069 /* EightBase.swift */; };
 		89BB036821DC0304002BE069 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89BB036621DC0304002BE069 /* README.md */; };
@@ -41,12 +48,18 @@
 		45FE9BCD8234AB1CB6F39949 /* Pods-EightBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EightBaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EightBaseTests/Pods-EightBaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		893D8AA321E4183000961B28 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		893D8AA521E4183100961B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		893D8AA721E4183100961B28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		893D8AA721E4183100961B28 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		893D8AAA21E4183100961B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		893D8AAC21E4183300961B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		893D8AAF21E4183300961B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		893D8AB121E4183300961B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		893D8AB521E41DA000961B28 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		8984FAF921E6C02B00F81351 /* BrokersViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BrokersViewController.graphql; sourceTree = "<group>"; };
+		8984FAFB21E6C33A00F81351 /* BrokersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokersViewController.swift; sourceTree = "<group>"; };
+		8984FAFF21E7DCDE00F81351 /* BrokerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerTableViewCell.swift; sourceTree = "<group>"; };
+		8984FB0121E7DCF400F81351 /* BrokerTableViewCell.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BrokerTableViewCell.graphql; sourceTree = "<group>"; };
+		8984FB0321E7E23D00F81351 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		8984FB0521E7F3A400F81351 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Example/API.swift; sourceTree = SOURCE_ROOT; };
 		89BB033021DBDDC1002BE069 /* EightBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EightBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BB033921DBDDC1002BE069 /* EightBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EightBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BB035121DBFD70002BE069 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -72,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A950DBEC9204558C1E7A02EE /* Pods_Example.framework in Frameworks */,
+				8984FAFD21E6C74700F81351 /* EightBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,8 +123,13 @@
 		893D8AA421E4183100961B28 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				89412ADC21E6BC45007FA37C /* GraphQL */,
 				893D8AA521E4183100961B28 /* AppDelegate.swift */,
-				893D8AA721E4183100961B28 /* ViewController.swift */,
+				893D8AA721E4183100961B28 /* DashboardViewController.swift */,
+				8984FAF921E6C02B00F81351 /* BrokersViewController.graphql */,
+				8984FAFB21E6C33A00F81351 /* BrokersViewController.swift */,
+				8984FAFF21E7DCDE00F81351 /* BrokerTableViewCell.swift */,
+				8984FB0121E7DCF400F81351 /* BrokerTableViewCell.graphql */,
 				893D8AA921E4183100961B28 /* Main.storyboard */,
 				893D8AAC21E4183300961B28 /* Assets.xcassets */,
 				893D8AAE21E4183300961B28 /* LaunchScreen.storyboard */,
@@ -118,6 +137,15 @@
 				893D8AB521E41DA000961B28 /* Auth0.plist */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		89412ADC21E6BC45007FA37C /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				8984FB0521E7F3A400F81351 /* API.swift */,
+				8984FB0321E7E23D00F81351 /* schema.json */,
+			);
+			path = GraphQL;
 			sourceTree = "<group>";
 		};
 		89BB032621DBDDC1002BE069 = {
@@ -217,6 +245,7 @@
 				893D8AA021E4183000961B28 /* Frameworks */,
 				893D8AA121E4183000961B28 /* Resources */,
 				F1949962DC276C525FE3B7F7 /* [CP] Embed Pods Frameworks */,
+				89412ADF21E6BC6C007FA37C /* Generate Apollo GraphQL API */,
 			);
 			buildRules = (
 			);
@@ -314,6 +343,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				893D8AB021E4183300961B28 /* LaunchScreen.storyboard in Resources */,
+				8984FB0221E7DCF400F81351 /* BrokerTableViewCell.graphql in Resources */,
+				8984FAFA21E6C02B00F81351 /* BrokersViewController.graphql in Resources */,
+				8984FB0421E7E23D00F81351 /* schema.json in Resources */,
 				893D8AAD21E4183300961B28 /* Assets.xcassets in Resources */,
 				893D8AAB21E4183100961B28 /* Main.storyboard in Resources */,
 				893D8AB621E41DA000961B28 /* Auth0.plist in Resources */,
@@ -368,6 +400,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EightBaseTests/Pods-EightBaseTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		89412ADF21E6BC6C007FA37C /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=GraphQL/schema.json --passthroughCustomScalars API.swift\n";
 		};
 		8AA75682B59891FC4C189AC8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -472,8 +522,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				893D8AA821E4183100961B28 /* ViewController.swift in Sources */,
+				8984FB0021E7DCDE00F81351 /* BrokerTableViewCell.swift in Sources */,
+				893D8AA821E4183100961B28 /* DashboardViewController.swift in Sources */,
+				8984FAFC21E6C33A00F81351 /* BrokersViewController.swift in Sources */,
 				893D8AA621E4183100961B28 /* AppDelegate.swift in Sources */,
+				8984FB0621E7F3A500F81351 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

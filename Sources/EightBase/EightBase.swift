@@ -79,7 +79,8 @@ func initApollo() {
         idToken = credentials.idToken
     }
     let url = URL(string: baseEndPoint!)!
-    let headers = ["Authorization": "bearer \(idToken!)"]
+//    let headers = ["Authorization": "bearer \(idToken!)"]
+    let headers = ["Authorization": "e4146738-2858-42a4-9932-3464de3d5739"]
     let transport = AlamofireTransport(url: url, headers: headers)
     let client = ApolloClient(networkTransport: transport)
     Apollo = client

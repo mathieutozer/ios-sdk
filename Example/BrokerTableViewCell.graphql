@@ -1,0 +1,8 @@
+fragment BrokerDetails on Broker {
+    user {
+        id
+        email
+        firstName
+        lastName
+    }
+}

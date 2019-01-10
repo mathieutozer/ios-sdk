@@ -1,0 +1,8 @@
+query AllBrokers {
+    brokersList {
+        items {
+            ...BrokerDetails
+        }
+        count
+    }    
+}
