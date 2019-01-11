@@ -1,0 +1,14 @@
+fragment CustomerDetails on Customer {
+    user {
+        id
+        email
+        firstName
+        lastName
+    }
+    purchases {
+        count
+    }
+    sales {
+        count
+    }
+}

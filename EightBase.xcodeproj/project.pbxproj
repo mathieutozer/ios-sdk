@@ -13,13 +13,17 @@
 		893D8AAD21E4183300961B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 893D8AAC21E4183300961B28 /* Assets.xcassets */; };
 		893D8AB021E4183300961B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893D8AAE21E4183300961B28 /* LaunchScreen.storyboard */; };
 		893D8AB621E41DA000961B28 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 893D8AB521E41DA000961B28 /* Auth0.plist */; };
-		8984FAFA21E6C02B00F81351 /* BrokersViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FAF921E6C02B00F81351 /* BrokersViewController.graphql */; };
-		8984FAFC21E6C33A00F81351 /* BrokersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FAFB21E6C33A00F81351 /* BrokersViewController.swift */; };
 		8984FAFD21E6C74700F81351 /* EightBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BB033021DBDDC1002BE069 /* EightBase.framework */; };
-		8984FB0021E7DCDE00F81351 /* BrokerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FAFF21E7DCDE00F81351 /* BrokerTableViewCell.swift */; };
-		8984FB0221E7DCF400F81351 /* BrokerTableViewCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0121E7DCF400F81351 /* BrokerTableViewCell.graphql */; };
 		8984FB0421E7E23D00F81351 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0321E7E23D00F81351 /* schema.json */; };
-		8984FB0621E7F3A500F81351 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB0521E7F3A400F81351 /* API.swift */; };
+		8984FB1221E80D6000F81351 /* CustomersViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0921E80D6000F81351 /* CustomersViewController.graphql */; };
+		8984FB1321E80D6000F81351 /* CustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB0A21E80D6000F81351 /* CustomerTableViewCell.swift */; };
+		8984FB1421E80D6000F81351 /* CustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB0B21E80D6000F81351 /* CustomersViewController.swift */; };
+		8984FB1521E80D6000F81351 /* CustomerTableViewCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0C21E80D6000F81351 /* CustomerTableViewCell.graphql */; };
+		8984FB1621E80D6000F81351 /* BrokersViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0E21E80D6000F81351 /* BrokersViewController.graphql */; };
+		8984FB1721E80D6000F81351 /* BrokerTableViewCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0F21E80D6000F81351 /* BrokerTableViewCell.graphql */; };
+		8984FB1821E80D6000F81351 /* BrokersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB1021E80D6000F81351 /* BrokersViewController.swift */; };
+		8984FB1921E80D6000F81351 /* BrokerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB1121E80D6000F81351 /* BrokerTableViewCell.swift */; };
+		8984FB1A21E812A500F81351 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB0521E7F3A400F81351 /* API.swift */; };
 		89BB033A21DBDDC1002BE069 /* EightBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BB033021DBDDC1002BE069 /* EightBase.framework */; };
 		89BB035E21DBFFBA002BE069 /* EightBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB035621DBFFB9002BE069 /* EightBase.swift */; };
 		89BB036821DC0304002BE069 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89BB036621DC0304002BE069 /* README.md */; };
@@ -54,12 +58,16 @@
 		893D8AAF21E4183300961B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		893D8AB121E4183300961B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		893D8AB521E41DA000961B28 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
-		8984FAF921E6C02B00F81351 /* BrokersViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BrokersViewController.graphql; sourceTree = "<group>"; };
-		8984FAFB21E6C33A00F81351 /* BrokersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokersViewController.swift; sourceTree = "<group>"; };
-		8984FAFF21E7DCDE00F81351 /* BrokerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerTableViewCell.swift; sourceTree = "<group>"; };
-		8984FB0121E7DCF400F81351 /* BrokerTableViewCell.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BrokerTableViewCell.graphql; sourceTree = "<group>"; };
 		8984FB0321E7E23D00F81351 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		8984FB0521E7F3A400F81351 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Example/API.swift; sourceTree = SOURCE_ROOT; };
+		8984FB0921E80D6000F81351 /* CustomersViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CustomersViewController.graphql; sourceTree = "<group>"; };
+		8984FB0A21E80D6000F81351 /* CustomerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerTableViewCell.swift; sourceTree = "<group>"; };
+		8984FB0B21E80D6000F81351 /* CustomersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersViewController.swift; sourceTree = "<group>"; };
+		8984FB0C21E80D6000F81351 /* CustomerTableViewCell.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CustomerTableViewCell.graphql; sourceTree = "<group>"; };
+		8984FB0E21E80D6000F81351 /* BrokersViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BrokersViewController.graphql; sourceTree = "<group>"; };
+		8984FB0F21E80D6000F81351 /* BrokerTableViewCell.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BrokerTableViewCell.graphql; sourceTree = "<group>"; };
+		8984FB1021E80D6000F81351 /* BrokersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokersViewController.swift; sourceTree = "<group>"; };
+		8984FB1121E80D6000F81351 /* BrokerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokerTableViewCell.swift; sourceTree = "<group>"; };
 		89BB033021DBDDC1002BE069 /* EightBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EightBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BB033921DBDDC1002BE069 /* EightBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EightBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BB035121DBFD70002BE069 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -126,10 +134,8 @@
 				89412ADC21E6BC45007FA37C /* GraphQL */,
 				893D8AA521E4183100961B28 /* AppDelegate.swift */,
 				893D8AA721E4183100961B28 /* DashboardViewController.swift */,
-				8984FAF921E6C02B00F81351 /* BrokersViewController.graphql */,
-				8984FAFB21E6C33A00F81351 /* BrokersViewController.swift */,
-				8984FAFF21E7DCDE00F81351 /* BrokerTableViewCell.swift */,
-				8984FB0121E7DCF400F81351 /* BrokerTableViewCell.graphql */,
+				8984FB0D21E80D6000F81351 /* Brokers */,
+				8984FB0821E80D6000F81351 /* Customers */,
 				893D8AA921E4183100961B28 /* Main.storyboard */,
 				893D8AAC21E4183300961B28 /* Assets.xcassets */,
 				893D8AAE21E4183300961B28 /* LaunchScreen.storyboard */,
@@ -146,6 +152,28 @@
 				8984FB0321E7E23D00F81351 /* schema.json */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		8984FB0821E80D6000F81351 /* Customers */ = {
+			isa = PBXGroup;
+			children = (
+				8984FB0B21E80D6000F81351 /* CustomersViewController.swift */,
+				8984FB0921E80D6000F81351 /* CustomersViewController.graphql */,
+				8984FB0A21E80D6000F81351 /* CustomerTableViewCell.swift */,
+				8984FB0C21E80D6000F81351 /* CustomerTableViewCell.graphql */,
+			);
+			path = Customers;
+			sourceTree = "<group>";
+		};
+		8984FB0D21E80D6000F81351 /* Brokers */ = {
+			isa = PBXGroup;
+			children = (
+				8984FB1021E80D6000F81351 /* BrokersViewController.swift */,
+				8984FB0E21E80D6000F81351 /* BrokersViewController.graphql */,
+				8984FB1121E80D6000F81351 /* BrokerTableViewCell.swift */,
+				8984FB0F21E80D6000F81351 /* BrokerTableViewCell.graphql */,
+			);
+			path = Brokers;
 			sourceTree = "<group>";
 		};
 		89BB032621DBDDC1002BE069 = {
@@ -343,12 +371,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				893D8AB021E4183300961B28 /* LaunchScreen.storyboard in Resources */,
-				8984FB0221E7DCF400F81351 /* BrokerTableViewCell.graphql in Resources */,
-				8984FAFA21E6C02B00F81351 /* BrokersViewController.graphql in Resources */,
+				8984FB1621E80D6000F81351 /* BrokersViewController.graphql in Resources */,
 				8984FB0421E7E23D00F81351 /* schema.json in Resources */,
+				8984FB1221E80D6000F81351 /* CustomersViewController.graphql in Resources */,
+				8984FB1521E80D6000F81351 /* CustomerTableViewCell.graphql in Resources */,
 				893D8AAD21E4183300961B28 /* Assets.xcassets in Resources */,
 				893D8AAB21E4183100961B28 /* Main.storyboard in Resources */,
 				893D8AB621E41DA000961B28 /* Auth0.plist in Resources */,
+				8984FB1721E80D6000F81351 /* BrokerTableViewCell.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,11 +552,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8984FB0021E7DCDE00F81351 /* BrokerTableViewCell.swift in Sources */,
 				893D8AA821E4183100961B28 /* DashboardViewController.swift in Sources */,
-				8984FAFC21E6C33A00F81351 /* BrokersViewController.swift in Sources */,
+				8984FB1821E80D6000F81351 /* BrokersViewController.swift in Sources */,
+				8984FB1421E80D6000F81351 /* CustomersViewController.swift in Sources */,
 				893D8AA621E4183100961B28 /* AppDelegate.swift in Sources */,
-				8984FB0621E7F3A500F81351 /* API.swift in Sources */,
+				8984FB1921E80D6000F81351 /* BrokerTableViewCell.swift in Sources */,
+				8984FB1321E80D6000F81351 /* CustomerTableViewCell.swift in Sources */,
+				8984FB1A21E812A500F81351 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

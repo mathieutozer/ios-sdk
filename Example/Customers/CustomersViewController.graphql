@@ -1,0 +1,8 @@
+query AllCustomers {
+    customersList {
+        items {
+            ...CustomerDetails
+        }
+        count
+    }
+}

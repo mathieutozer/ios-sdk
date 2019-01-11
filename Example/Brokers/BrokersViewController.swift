@@ -53,7 +53,7 @@ class BrokersViewController: UITableViewController {
         }
 
         guard let broker = brokersList?[indexPath.row] else {
-            fatalError("Could not find post at row \(indexPath.row)")
+            fatalError("Could not find customer at row \(indexPath.row)")
         }
 
         cell.configure(with: broker.fragments.brokerDetails)
