@@ -1,0 +1,7 @@
+fragment PropertyDetails on Property {
+    id
+    title
+    description
+    bedrooms
+}
+

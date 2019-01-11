@@ -1,0 +1,9 @@
+query AllListing {
+    listingsList {
+        items {
+            ...ListingDetails
+        }
+        count
+    }
+}
+

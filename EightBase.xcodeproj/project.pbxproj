@@ -24,6 +24,14 @@
 		8984FB1821E80D6000F81351 /* BrokersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB1021E80D6000F81351 /* BrokersViewController.swift */; };
 		8984FB1921E80D6000F81351 /* BrokerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB1121E80D6000F81351 /* BrokerTableViewCell.swift */; };
 		8984FB1A21E812A500F81351 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB0521E7F3A400F81351 /* API.swift */; };
+		8984FB2521E8168400F81351 /* ListingsViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB1C21E8168300F81351 /* ListingsViewController.graphql */; };
+		8984FB2621E8168400F81351 /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB1D21E8168300F81351 /* ListingTableViewCell.swift */; };
+		8984FB2721E8168400F81351 /* ListingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB1E21E8168300F81351 /* ListingsViewController.swift */; };
+		8984FB2821E8168400F81351 /* ListingTableViewCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB1F21E8168300F81351 /* ListingTableViewCell.graphql */; };
+		8984FB2921E8168400F81351 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB2121E8168400F81351 /* PropertyTableViewCell.swift */; };
+		8984FB2A21E8168400F81351 /* PropertyTableViewCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB2221E8168400F81351 /* PropertyTableViewCell.graphql */; };
+		8984FB2B21E8168400F81351 /* PropertiesViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB2321E8168400F81351 /* PropertiesViewController.graphql */; };
+		8984FB2C21E8168400F81351 /* PropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB2421E8168400F81351 /* PropertiesViewController.swift */; };
 		89BB033A21DBDDC1002BE069 /* EightBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BB033021DBDDC1002BE069 /* EightBase.framework */; };
 		89BB035E21DBFFBA002BE069 /* EightBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB035621DBFFB9002BE069 /* EightBase.swift */; };
 		89BB036821DC0304002BE069 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89BB036621DC0304002BE069 /* README.md */; };
@@ -68,6 +76,14 @@
 		8984FB0F21E80D6000F81351 /* BrokerTableViewCell.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BrokerTableViewCell.graphql; sourceTree = "<group>"; };
 		8984FB1021E80D6000F81351 /* BrokersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokersViewController.swift; sourceTree = "<group>"; };
 		8984FB1121E80D6000F81351 /* BrokerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokerTableViewCell.swift; sourceTree = "<group>"; };
+		8984FB1C21E8168300F81351 /* ListingsViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ListingsViewController.graphql; sourceTree = "<group>"; };
+		8984FB1D21E8168300F81351 /* ListingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
+		8984FB1E21E8168300F81351 /* ListingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsViewController.swift; sourceTree = "<group>"; };
+		8984FB1F21E8168300F81351 /* ListingTableViewCell.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ListingTableViewCell.graphql; sourceTree = "<group>"; };
+		8984FB2121E8168400F81351 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
+		8984FB2221E8168400F81351 /* PropertyTableViewCell.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PropertyTableViewCell.graphql; sourceTree = "<group>"; };
+		8984FB2321E8168400F81351 /* PropertiesViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PropertiesViewController.graphql; sourceTree = "<group>"; };
+		8984FB2421E8168400F81351 /* PropertiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesViewController.swift; sourceTree = "<group>"; };
 		89BB033021DBDDC1002BE069 /* EightBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EightBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BB033921DBDDC1002BE069 /* EightBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EightBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BB035121DBFD70002BE069 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -136,6 +152,8 @@
 				893D8AA721E4183100961B28 /* DashboardViewController.swift */,
 				8984FB0D21E80D6000F81351 /* Brokers */,
 				8984FB0821E80D6000F81351 /* Customers */,
+				8984FB1B21E8168300F81351 /* Listings */,
+				8984FB2021E8168400F81351 /* Properties */,
 				893D8AA921E4183100961B28 /* Main.storyboard */,
 				893D8AAC21E4183300961B28 /* Assets.xcassets */,
 				893D8AAE21E4183300961B28 /* LaunchScreen.storyboard */,
@@ -174,6 +192,28 @@
 				8984FB0F21E80D6000F81351 /* BrokerTableViewCell.graphql */,
 			);
 			path = Brokers;
+			sourceTree = "<group>";
+		};
+		8984FB1B21E8168300F81351 /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				8984FB1E21E8168300F81351 /* ListingsViewController.swift */,
+				8984FB1C21E8168300F81351 /* ListingsViewController.graphql */,
+				8984FB1D21E8168300F81351 /* ListingTableViewCell.swift */,
+				8984FB1F21E8168300F81351 /* ListingTableViewCell.graphql */,
+			);
+			path = Listings;
+			sourceTree = "<group>";
+		};
+		8984FB2021E8168400F81351 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				8984FB2421E8168400F81351 /* PropertiesViewController.swift */,
+				8984FB2321E8168400F81351 /* PropertiesViewController.graphql */,
+				8984FB2121E8168400F81351 /* PropertyTableViewCell.swift */,
+				8984FB2221E8168400F81351 /* PropertyTableViewCell.graphql */,
+			);
+			path = Properties;
 			sourceTree = "<group>";
 		};
 		89BB032621DBDDC1002BE069 = {
@@ -371,13 +411,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				893D8AB021E4183300961B28 /* LaunchScreen.storyboard in Resources */,
+				8984FB2521E8168400F81351 /* ListingsViewController.graphql in Resources */,
 				8984FB1621E80D6000F81351 /* BrokersViewController.graphql in Resources */,
 				8984FB0421E7E23D00F81351 /* schema.json in Resources */,
 				8984FB1221E80D6000F81351 /* CustomersViewController.graphql in Resources */,
+				8984FB2B21E8168400F81351 /* PropertiesViewController.graphql in Resources */,
+				8984FB2821E8168400F81351 /* ListingTableViewCell.graphql in Resources */,
 				8984FB1521E80D6000F81351 /* CustomerTableViewCell.graphql in Resources */,
 				893D8AAD21E4183300961B28 /* Assets.xcassets in Resources */,
 				893D8AAB21E4183100961B28 /* Main.storyboard in Resources */,
 				893D8AB621E41DA000961B28 /* Auth0.plist in Resources */,
+				8984FB2A21E8168400F81351 /* PropertyTableViewCell.graphql in Resources */,
 				8984FB1721E80D6000F81351 /* BrokerTableViewCell.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,8 +598,12 @@
 			files = (
 				893D8AA821E4183100961B28 /* DashboardViewController.swift in Sources */,
 				8984FB1821E80D6000F81351 /* BrokersViewController.swift in Sources */,
+				8984FB2921E8168400F81351 /* PropertyTableViewCell.swift in Sources */,
+				8984FB2721E8168400F81351 /* ListingsViewController.swift in Sources */,
+				8984FB2621E8168400F81351 /* ListingTableViewCell.swift in Sources */,
 				8984FB1421E80D6000F81351 /* CustomersViewController.swift in Sources */,
 				893D8AA621E4183100961B28 /* AppDelegate.swift in Sources */,
+				8984FB2C21E8168400F81351 /* PropertiesViewController.swift in Sources */,
 				8984FB1921E80D6000F81351 /* BrokerTableViewCell.swift in Sources */,
 				8984FB1321E80D6000F81351 /* CustomerTableViewCell.swift in Sources */,
 				8984FB1A21E812A500F81351 /* API.swift in Sources */,

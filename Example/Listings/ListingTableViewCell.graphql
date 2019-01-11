@@ -1,0 +1,24 @@
+fragment ListingDetails on Listing {
+    id
+    broker {
+        user {
+            firstName
+            lastName
+        }
+    }
+    buyer {
+        user {
+            firstName
+            lastName
+        }
+    }
+    seller {
+        user {
+            firstName
+            lastName
+        }
+    }
+    status
+    price
+}
+
