@@ -9,11 +9,15 @@
 import UIKit
 import EightBase
 import Apollo
+import JGProgressHUD
 
 class CustomersViewController: UITableViewController {
+    let hud = JGProgressHUD(style: .dark)
+    
     var customersList: [AllCustomersQuery.Data.CustomersList.Item]? {
         didSet {
             tableView.reloadData()
+            hud.dismiss()
         }
     }
 
@@ -22,6 +26,8 @@ class CustomersViewController: UITableViewController {
 
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 64
+        
+        hud.show(in: self.view)
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -18,9 +18,11 @@ target 'EightBase' do
 end
 
 target 'Example' do
+#    pod 'EightBase'
     pod 'Auth0'
-    pod 'Apollo'
+##    pod 'Apollo'
     pod 'ApolloAlamofire'
+    pod 'JGProgressHUD'
 end
 
 post_install do |installer_representation|

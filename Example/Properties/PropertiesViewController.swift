@@ -9,11 +9,15 @@
 import UIKit
 import EightBase
 import Apollo
+import JGProgressHUD
 
 class PropertiesViewController: UITableViewController {
+    let hud = JGProgressHUD(style: .dark)
+
     var propertiesList: [AllPropertiesQuery.Data.PropertiesList.Item]? {
         didSet {
             tableView.reloadData()
+            hud.dismiss()
         }
     }
 
@@ -22,6 +26,8 @@ class PropertiesViewController: UITableViewController {
 
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 64
+        
+        hud.show(in: self.view)
     }
 
     override func viewWillAppear(_ animated: Bool) {
