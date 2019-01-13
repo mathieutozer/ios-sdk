@@ -6,17 +6,20 @@ import ApolloAlamofire
 
 let credentialsManager = CredentialsManager(authentication: Auth0.authentication())
 
-private var baseEndPoint: String? = nil
+private var eightBaseEndPoint: String? = nil
+private var eightBaseApiToken: String? = nil
 
-public func auth(with endPoint: String) {
-    baseEndPoint = endPoint
+public func auth(with endPoint: String, apiToken: String? = nil) {
+    eightBaseEndPoint = endPoint
+    eightBaseApiToken = apiToken
     
     guard let clientInfo = plistValues(bundle: Bundle.main) else { return }
 
     Auth0
         .webAuth()
         .scope("openid profile offline_access")
-        .audience("https://" + clientInfo.domain + "/userinfo")
+        .audience("https://8base.auth0.com/api/v2/")
+//    .audience("https://" + clientInfo.domain + "/userinfo")
         .start { result in
             switch result {
             case .success(let credentials):
@@ -61,7 +64,7 @@ public var Apollo: ApolloClient? {
 }
 
 func initApollo() {
-    guard baseEndPoint != nil else {
+    guard eightBaseEndPoint != nil else {
         print("Endpoint undefined")
         return
     }
@@ -78,9 +81,14 @@ func initApollo() {
         // Valid credentials, you can access the token properties such as `idToken`, `accessToken`.
         idToken = credentials.idToken
     }
-    let url = URL(string: baseEndPoint!)!
-//    let headers = ["Authorization": "bearer \(idToken!)"]
-    let headers = ["Authorization": "e4146738-2858-42a4-9932-3464de3d5739"]
+    let url = URL(string: eightBaseEndPoint!)!
+    var headers: [String: String]? = nil
+    if eightBaseApiToken != nil {
+        headers = ["Authorization": eightBaseApiToken!]
+    }
+    else {
+        headers = ["Authorization": "bearer \(idToken!)"]
+    }
     let transport = AlamofireTransport(url: url, headers: headers)
     let client = ApolloClient(networkTransport: transport)
     Apollo = client

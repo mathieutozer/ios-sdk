@@ -55,7 +55,15 @@ EightBase.auth(with: __YOUR_8BASE_ENDPOINT__)
 
 ## How migrate from Apollo
 
+Just use Apollo variable from EightBase
+
 You should 
 ```swift
-EightBase.auth(with: __YOUR_8BASE_ENDPOINT__)
+EightBase.Apollo?.watch(query: AllCustomersQuery()) { (result, error) in
+    if let error = error {
+        NSLog("Error while fetching query: \(error.localizedDescription)")
+        return
+    }
+    ...
+}
 ```
