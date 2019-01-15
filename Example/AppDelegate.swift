@@ -18,7 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        EightBase.auth(with: "https://api.8base.com/cjnopo7vd000c01pcq8xzbs44")
+//        EightBase.enableBiometrics(withTitle: "Touch ID / Face ID Login")
+        
+        EightBase.auth(with: "https://prestaging-api.8basedev.com/cjqwq4nju000801qscihisrkw", apiToken: nil) { result in
+            switch(result) {
+            case .success():
+                print("Successfully authentificated")
+                break
+            case .failure(let error):
+                print("Failed with \(error)")
+                break
+            }
+        }
         
         return true
     }
@@ -45,6 +56,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        return EightBase.resumeAuth(url, options: options)
+    }
 
 }
 

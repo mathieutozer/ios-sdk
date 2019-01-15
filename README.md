@@ -40,13 +40,57 @@ In your application bundle add a `plist` file named `Auth0.plist` with the follo
 </plist>
 ```
 
+In your application's `Info.plist` file register your iOS Bundle Identifier as a custom scheme like this:
+```xml
+<key>CFBundleURLTypes</key>
+<array>
+<dict>
+<key>CFBundleTypeRole</key>
+<string>None</string>
+<key>CFBundleURLName</key>
+<string>auth0</string>
+<key>CFBundleURLSchemes</key>
+<array>
+<string>{YOUR_BUNDLE_IDENTIFIER}</string>
+</array>
+</dict>
+</array>
+```
 
 ## Usage
 
 #### Initializing
 
+You should authentificate using idToken
+
 ```swift
 EightBase.auth(with: __YOUR_8BASE_ENDPOINT__)
+```
+or apiToken
+
+```swift
+EightBase.auth(with: __YOUR_8BASE_ENDPOINT__, apiToken: __YOUR_API_TOKEN__OR_NIL__) { result in
+    switch(result) {
+        case .success():
+            print("Successfully authentificated")
+        break
+        case .failure(let error):
+            print("Failed with \(error)")
+        break
+    }
+}
+```
+
+Allow EightBase to handle authentication callbacks. In your AppDelegate.swift add the following:
+```swift
+func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+return EightBase.resumeAuth(url, options: options)
+}
+```
+
+To enable Face ID or Touch ID use the fillowing code:
+```swift
+EightBase.enableBiometrics(withTitle: "Touch ID / Face ID Login")
 ```
 
 ## Apollo Documentation
@@ -57,7 +101,7 @@ EightBase.auth(with: __YOUR_8BASE_ENDPOINT__)
 
 Just use Apollo variable from EightBase
 
-You should 
+You should just use `EightBase.Apollo`
 ```swift
 EightBase.Apollo?.watch(query: AllCustomersQuery()) { (result, error) in
     if let error = error {

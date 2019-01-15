@@ -160,6 +160,7 @@
 		893D8AA421E4183100961B28 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				8984FB0521E7F3A400F81351 /* API.swift */,
 				89412ADC21E6BC45007FA37C /* GraphQL */,
 				893D8AA521E4183100961B28 /* AppDelegate.swift */,
 				893D8AA721E4183100961B28 /* DashboardViewController.swift */,
@@ -179,7 +180,6 @@
 		89412ADC21E6BC45007FA37C /* GraphQL */ = {
 			isa = PBXGroup;
 			children = (
-				8984FB0521E7F3A400F81351 /* API.swift */,
 				8984FB0321E7E23D00F81351 /* schema.json */,
 			);
 			path = GraphQL;

@@ -4,54 +4,51 @@ import Apollo
 import ApolloAlamofire
 //import TransactionStore
 
-let credentialsManager = CredentialsManager(authentication: Auth0.authentication())
+var credentialsManager = CredentialsManager(authentication: Auth0.authentication())
+var isBioAuthEnabled = false
 
 private var eightBaseEndPoint: String? = nil
 private var eightBaseApiToken: String? = nil
 
-public func auth(with endPoint: String, apiToken: String? = nil) {
+public enum EightBaseResult {
+    case success()
+    case failure(error: Error)
+}
+
+public enum EightBaseError: CustomNSError {
+    case noEndpointFound
+    case cantStoreCredentials
+    case invalidCredentials
+    case cancelled
+}
+
+public func enableBiometrics(withTitle title: String, cancelTitle: String? = nil, fallbackTitle: String? = nil) {
+    isBioAuthEnabled = true
+    credentialsManager.enableBiometrics(withTitle: title, cancelTitle: cancelTitle, fallbackTitle: fallbackTitle)
+}
+
+public func auth(with endPoint: String, apiToken: String?, callback: @escaping (EightBaseResult) -> Void) {
     eightBaseEndPoint = endPoint
     eightBaseApiToken = apiToken
     
-    guard let clientInfo = plistValues(bundle: Bundle.main) else { return }
-
     Auth0
         .webAuth()
-        .scope("openid profile offline_access")
-        .audience("https://8base.auth0.com/api/v2/")
-//    .audience("https://" + clientInfo.domain + "/userinfo")
+        .scope("openid profile email offline_access")
         .start { result in
             switch result {
             case .success(let credentials):
-                print("Obtained credentials: \(credentials)")
-                _ = credentialsManager.store(credentials: credentials)
-                initApollo()
+                if (!credentialsManager.store(credentials: credentials)) {
+                    print("Failed to store credentials")
+                    return callback(EightBaseResult.failure(error: EightBaseError.cantStoreCredentials))
+                } else {
+                    return initApollo(with: credentials, callback: callback)
+                }
             case .failure(let error):
-                print("Failed with \(error)")
+                _ = credentialsManager.clear()
+                return callback(EightBaseResult.failure(error: error))
             }
     }
 }
-
-func plistValues(bundle: Bundle) -> (clientId: String, domain: String)? {
-    guard
-        let path = bundle.path(forResource: "Auth0", ofType: "plist"),
-        let values = NSDictionary(contentsOfFile: path) as? [String: Any]
-        else {
-            print("Missing Auth0.plist file with 'ClientId' and 'Domain' entries in main bundle!")
-            return nil
-    }
-    
-    guard
-        let clientId = values["ClientId"] as? String,
-        let domain = values["Domain"] as? String
-        else {
-            print("Auth0.plist file at \(path) is missing 'ClientId' and/or 'Domain' entries!")
-            print("File currently has the following entries: \(values)")
-            return nil
-    }
-    return (clientId: clientId, domain: domain)
-}
-
 
 var apollo: ApolloClient? = nil
 public var Apollo: ApolloClient? {
@@ -63,23 +60,12 @@ public var Apollo: ApolloClient? {
     }
 }
 
-func initApollo() {
+public func initApollo(with credentials: Credentials, callback: @escaping (EightBaseResult) -> Void) {
     guard eightBaseEndPoint != nil else {
-        print("Endpoint undefined")
-        return
+        return callback(EightBaseResult.failure(error: EightBaseError.noEndpointFound))
     }
     guard credentialsManager.hasValid() else {
-        print("Invalid credentials")
-        return
-    }
-    var idToken: String? = nil
-    credentialsManager.credentials { error, credentials in
-        guard error == nil, let credentials = credentials else {
-            print("Failed to instantly retrieve the credentials with error: \(String(describing: error))")
-            return
-        }
-        // Valid credentials, you can access the token properties such as `idToken`, `accessToken`.
-        idToken = credentials.idToken
+        return callback(EightBaseResult.failure(error: EightBaseError.invalidCredentials))
     }
     let url = URL(string: eightBaseEndPoint!)!
     var headers: [String: String]? = nil
@@ -87,13 +73,22 @@ func initApollo() {
         headers = ["Authorization": eightBaseApiToken!]
     }
     else {
-        headers = ["Authorization": "bearer \(idToken!)"]
+        var idToken: String? = nil
+        credentialsManager.credentials { error, credentials in
+            guard error == nil, let credentials = credentials else {
+//            print("Failed to instantly retrieve the credentials with error: \(String(describing: error))")
+                return callback(EightBaseResult.failure(error: error!))
+            }
+//
+            idToken = credentials.idToken
+            headers = ["Authorization": "Bearer \(idToken!)"]
+        }
     }
     let transport = AlamofireTransport(url: url, headers: headers)
     let client = ApolloClient(networkTransport: transport)
     Apollo = client
 }
 
-//    @objc public func resumeAuth(_ url: URL, options: [A0URLOptionsKey: Any]) -> Bool {
-//        return TransactionStore.shared.resume(url, options: options)
-//    }
+public func resumeAuth(_ url: URL, options: [A0URLOptionsKey: Any]) -> Bool {
+    return Auth0.resumeAuth(url, options: options)
+}
