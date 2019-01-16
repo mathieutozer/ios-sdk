@@ -4,6 +4,7 @@ import Apollo
 import ApolloAlamofire
 
 var credentialsManager = CredentialsManager(authentication: Auth0.authentication())
+var isBioAuthEnabled = false
 
 private var eightBaseEndPoint: String? = nil
 private var eightBaseApiToken: String? = nil
@@ -18,6 +19,11 @@ public enum EightBaseError: CustomNSError {
     case cantStoreCredentials
     case invalidCredentials
     case cancelled
+}
+
+public func enableBiometrics(withTitle title: String, cancelTitle: String? = nil, fallbackTitle: String? = nil) {
+    isBioAuthEnabled = true
+    credentialsManager.enableBiometrics(withTitle: title, cancelTitle: cancelTitle, fallbackTitle: fallbackTitle)
 }
 
 public func auth(with endPoint: String, apiToken: String?, callback: @escaping (EightBaseResult) -> Void) {

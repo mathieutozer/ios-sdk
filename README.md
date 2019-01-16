@@ -23,7 +23,7 @@ to install the EightBase pod and update it to the latest version of the SDK.
 
 Make sure to do the `pod update`.  CocoaPods may not use the latest version of the SDK otherwise!
 
-#### Adding Auth0 Credentials
+### Adding Auth0 Credentials
 
 In your application bundle add a `plist` file named `Auth0.plist` with the following information.
 
@@ -59,17 +59,26 @@ In your application's `Info.plist` file register your iOS Bundle Identifier as a
 
 ## Usage
 
-#### Initializing
+## Initializing
 
-You should authentificate using idToken
+You should authentificate using apiToken
 
 ```swift
-EightBase.auth(with: __YOUR_8BASE_ENDPOINT__)
+EightBase.auth(with: __YOUR_8BASE_ENDPOINT__, apiToken: __YOUR_API_TOKEN__) { result in
+switch(result) {
+case .success():
+print("Successfully authentificated")
+break
+case .failure(let error):
+print("Failed with \(error)")
+break
+}
+}
 ```
-or apiToken
+or idToken by passing `nil` for `apiToken`
 
 ```swift
-EightBase.auth(with: __YOUR_8BASE_ENDPOINT__, apiToken: __YOUR_API_TOKEN__OR_NIL__) { result in
+EightBase.auth(with: __YOUR_8BASE_ENDPOINT__, apiToken: nil) { result in
     switch(result) {
         case .success():
             print("Successfully authentificated")
@@ -84,13 +93,19 @@ EightBase.auth(with: __YOUR_8BASE_ENDPOINT__, apiToken: __YOUR_API_TOKEN__OR_NIL
 Allow EightBase to handle authentication callbacks. In your AppDelegate.swift add the following:
 ```swift
 func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
-return EightBase.resumeAuth(url, options: options)
+    return EightBase.resumeAuth(url, options: options)
 }
 ```
 
 To enable Face ID or Touch ID use the fillowing code:
 ```swift
 EightBase.enableBiometrics(withTitle: "Touch ID / Face ID Login")
+```
+
+Call `logout` to clear all credentials
+
+```swift
+EightBase.logout()
 ```
 
 ## Apollo Documentation
