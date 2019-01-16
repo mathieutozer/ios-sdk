@@ -18,9 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-//        EightBase.enableBiometrics(withTitle: "Touch ID / Face ID Login")
-        
-        EightBase.auth(with: "https://prestaging-api.8basedev.com/cjqwq4nju000801qscihisrkw", apiToken: nil) { result in
+        let apiToken: String? = "__API_TOKEN__"
+        EightBase.auth(with: "https://prestaging-api.8basedev.com/cjqwq4nju000801qscihisrkw", apiToken: apiToken) { result in
             switch(result) {
             case .success():
                 print("Successfully authentificated")
