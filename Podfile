@@ -18,10 +18,10 @@ target 'EightBase' do
 end
 
 target 'Example' do
-#    pod 'EightBase'
-    pod 'Auth0'
+    pod 'EightBase'
+#    pod 'Auth0'
 ##    pod 'Apollo'
-    pod 'ApolloAlamofire'
+#    pod 'ApolloAlamofire'
     pod 'JGProgressHUD'
 end
 
