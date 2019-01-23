@@ -108,7 +108,40 @@ Call `logout` to clear all credentials
 EightBase.logout()
 ```
 
-## Apollo Documentation
+# Apollo configuration details
+
+## Downloading a schema
+
+```
+apollo schema:download --endpoint=___YOUR_ENDPOINT___/graphql schema.json
+```
+
+## Adding a code generation build step
+
+In order to invoke apollo as part of the Xcode build process, create a build step that runs before “Compile Sources”.
+
+On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script, change its name to “Generate Apollo GraphQL API” and drag it just above “Compile Sources”. Then add the following contents to the script area below the shell:
+
+```swift
+APOLLO_FRAMEWORK_PATH="$(eval find $FRAMEWORK_SEARCH_PATHS -name "Apollo.framework" -maxdepth 1)"
+
+if [ -z "$APOLLO_FRAMEWORK_PATH" ]; then
+    echo "error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project."
+    exit 1
+fi
+
+cd "${SRCROOT}/${TARGET_NAME}"
+$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries="$(find . -name '*.graphql')" --schema=schema.json API.swift
+```
+
+The script above will invoke apollo through the check-and-run-apollo-cli.sh wrapper script, which is actually contained in the Apollo.framework bundle. The main reason for this is to check whether the version of apollo installed on your system is compatible with the framework version installed in your project, and to warn you if it isn’t. Without this check, you could end up generating code that is incompatible with the runtime code contained in the framework.
+
+## Adding the generated API file to your target
+
+Drag the generated API.swift file to your target.
+
+
+## Full Apollo documentation
 
 [Read the full docs at apollographql.com/docs/ios/](https://www.apollographql.com/docs/ios/)
 
