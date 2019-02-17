@@ -7,32 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2ACB8226C39D433EDCC64B61 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D2348D9A984A4298766B16 /* Pods_Example.framework */; };
-		893D8AA621E4183100961B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893D8AA521E4183100961B28 /* AppDelegate.swift */; };
-		893D8AA821E4183100961B28 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893D8AA721E4183100961B28 /* DashboardViewController.swift */; };
-		893D8AAB21E4183100961B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893D8AA921E4183100961B28 /* Main.storyboard */; };
-		893D8AAD21E4183300961B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 893D8AAC21E4183300961B28 /* Assets.xcassets */; };
-		893D8AB021E4183300961B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893D8AAE21E4183300961B28 /* LaunchScreen.storyboard */; };
-		893D8AB621E41DA000961B28 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 893D8AB521E41DA000961B28 /* Auth0.plist */; };
-		8984FAFD21E6C74700F81351 /* EightBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BB033021DBDDC1002BE069 /* EightBase.framework */; };
-		8984FB0421E7E23D00F81351 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0321E7E23D00F81351 /* schema.json */; };
-		8984FB1221E80D6000F81351 /* CustomersViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0921E80D6000F81351 /* CustomersViewController.graphql */; };
-		8984FB1321E80D6000F81351 /* CustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB0A21E80D6000F81351 /* CustomerTableViewCell.swift */; };
-		8984FB1421E80D6000F81351 /* CustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB0B21E80D6000F81351 /* CustomersViewController.swift */; };
-		8984FB1521E80D6000F81351 /* CustomerTableViewCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0C21E80D6000F81351 /* CustomerTableViewCell.graphql */; };
-		8984FB1621E80D6000F81351 /* BrokersViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0E21E80D6000F81351 /* BrokersViewController.graphql */; };
-		8984FB1721E80D6000F81351 /* BrokerTableViewCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB0F21E80D6000F81351 /* BrokerTableViewCell.graphql */; };
-		8984FB1821E80D6000F81351 /* BrokersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB1021E80D6000F81351 /* BrokersViewController.swift */; };
-		8984FB1921E80D6000F81351 /* BrokerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB1121E80D6000F81351 /* BrokerTableViewCell.swift */; };
-		8984FB1A21E812A500F81351 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB0521E7F3A400F81351 /* API.swift */; };
-		8984FB2521E8168400F81351 /* ListingsViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB1C21E8168300F81351 /* ListingsViewController.graphql */; };
-		8984FB2621E8168400F81351 /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB1D21E8168300F81351 /* ListingTableViewCell.swift */; };
-		8984FB2721E8168400F81351 /* ListingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB1E21E8168300F81351 /* ListingsViewController.swift */; };
-		8984FB2821E8168400F81351 /* ListingTableViewCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB1F21E8168300F81351 /* ListingTableViewCell.graphql */; };
-		8984FB2921E8168400F81351 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB2121E8168400F81351 /* PropertyTableViewCell.swift */; };
-		8984FB2A21E8168400F81351 /* PropertyTableViewCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB2221E8168400F81351 /* PropertyTableViewCell.graphql */; };
-		8984FB2B21E8168400F81351 /* PropertiesViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8984FB2321E8168400F81351 /* PropertiesViewController.graphql */; };
-		8984FB2C21E8168400F81351 /* PropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FB2421E8168400F81351 /* PropertiesViewController.swift */; };
 		89BB033A21DBDDC1002BE069 /* EightBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BB033021DBDDC1002BE069 /* EightBase.framework */; };
 		89BB035E21DBFFBA002BE069 /* EightBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB035621DBFFB9002BE069 /* EightBase.swift */; };
 		89BB036821DC0304002BE069 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89BB036621DC0304002BE069 /* README.md */; };
@@ -57,32 +31,6 @@
 		0B920F5B4B47BE8B18D945D4 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		28C4E1FB7D2369CA73BDC277 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		3DA1FD258CE32F54C527C215 /* Pods_EightBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EightBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		893D8AA321E4183000961B28 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		893D8AA521E4183100961B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		893D8AA721E4183100961B28 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		893D8AAA21E4183100961B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		893D8AAC21E4183300961B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		893D8AAF21E4183300961B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		893D8AB121E4183300961B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		893D8AB521E41DA000961B28 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
-		8984FB0321E7E23D00F81351 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
-		8984FB0521E7F3A400F81351 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Example/API.swift; sourceTree = SOURCE_ROOT; };
-		8984FB0921E80D6000F81351 /* CustomersViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CustomersViewController.graphql; sourceTree = "<group>"; };
-		8984FB0A21E80D6000F81351 /* CustomerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerTableViewCell.swift; sourceTree = "<group>"; };
-		8984FB0B21E80D6000F81351 /* CustomersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersViewController.swift; sourceTree = "<group>"; };
-		8984FB0C21E80D6000F81351 /* CustomerTableViewCell.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CustomerTableViewCell.graphql; sourceTree = "<group>"; };
-		8984FB0E21E80D6000F81351 /* BrokersViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BrokersViewController.graphql; sourceTree = "<group>"; };
-		8984FB0F21E80D6000F81351 /* BrokerTableViewCell.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BrokerTableViewCell.graphql; sourceTree = "<group>"; };
-		8984FB1021E80D6000F81351 /* BrokersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokersViewController.swift; sourceTree = "<group>"; };
-		8984FB1121E80D6000F81351 /* BrokerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokerTableViewCell.swift; sourceTree = "<group>"; };
-		8984FB1C21E8168300F81351 /* ListingsViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ListingsViewController.graphql; sourceTree = "<group>"; };
-		8984FB1D21E8168300F81351 /* ListingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
-		8984FB1E21E8168300F81351 /* ListingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsViewController.swift; sourceTree = "<group>"; };
-		8984FB1F21E8168300F81351 /* ListingTableViewCell.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ListingTableViewCell.graphql; sourceTree = "<group>"; };
-		8984FB2121E8168400F81351 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
-		8984FB2221E8168400F81351 /* PropertyTableViewCell.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PropertyTableViewCell.graphql; sourceTree = "<group>"; };
-		8984FB2321E8168400F81351 /* PropertiesViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PropertiesViewController.graphql; sourceTree = "<group>"; };
-		8984FB2421E8168400F81351 /* PropertiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesViewController.swift; sourceTree = "<group>"; };
 		89BB033021DBDDC1002BE069 /* EightBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EightBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BB033921DBDDC1002BE069 /* EightBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EightBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BB035121DBFD70002BE069 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -104,15 +52,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		893D8AA021E4183000961B28 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8984FAFD21E6C74700F81351 /* EightBase.framework in Frameworks */,
-				2ACB8226C39D433EDCC64B61 /* Pods_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		89BB032D21DBDDC1002BE069 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,78 +96,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		893D8AA421E4183100961B28 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				8984FB0521E7F3A400F81351 /* API.swift */,
-				89412ADC21E6BC45007FA37C /* GraphQL */,
-				893D8AA521E4183100961B28 /* AppDelegate.swift */,
-				893D8AA721E4183100961B28 /* DashboardViewController.swift */,
-				8984FB0D21E80D6000F81351 /* Brokers */,
-				8984FB0821E80D6000F81351 /* Customers */,
-				8984FB1B21E8168300F81351 /* Listings */,
-				8984FB2021E8168400F81351 /* Properties */,
-				893D8AA921E4183100961B28 /* Main.storyboard */,
-				893D8AAC21E4183300961B28 /* Assets.xcassets */,
-				893D8AAE21E4183300961B28 /* LaunchScreen.storyboard */,
-				893D8AB121E4183300961B28 /* Info.plist */,
-				893D8AB521E41DA000961B28 /* Auth0.plist */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		89412ADC21E6BC45007FA37C /* GraphQL */ = {
-			isa = PBXGroup;
-			children = (
-				8984FB0321E7E23D00F81351 /* schema.json */,
-			);
-			path = GraphQL;
-			sourceTree = "<group>";
-		};
-		8984FB0821E80D6000F81351 /* Customers */ = {
-			isa = PBXGroup;
-			children = (
-				8984FB0B21E80D6000F81351 /* CustomersViewController.swift */,
-				8984FB0921E80D6000F81351 /* CustomersViewController.graphql */,
-				8984FB0A21E80D6000F81351 /* CustomerTableViewCell.swift */,
-				8984FB0C21E80D6000F81351 /* CustomerTableViewCell.graphql */,
-			);
-			path = Customers;
-			sourceTree = "<group>";
-		};
-		8984FB0D21E80D6000F81351 /* Brokers */ = {
-			isa = PBXGroup;
-			children = (
-				8984FB1021E80D6000F81351 /* BrokersViewController.swift */,
-				8984FB0E21E80D6000F81351 /* BrokersViewController.graphql */,
-				8984FB1121E80D6000F81351 /* BrokerTableViewCell.swift */,
-				8984FB0F21E80D6000F81351 /* BrokerTableViewCell.graphql */,
-			);
-			path = Brokers;
-			sourceTree = "<group>";
-		};
-		8984FB1B21E8168300F81351 /* Listings */ = {
-			isa = PBXGroup;
-			children = (
-				8984FB1E21E8168300F81351 /* ListingsViewController.swift */,
-				8984FB1C21E8168300F81351 /* ListingsViewController.graphql */,
-				8984FB1D21E8168300F81351 /* ListingTableViewCell.swift */,
-				8984FB1F21E8168300F81351 /* ListingTableViewCell.graphql */,
-			);
-			path = Listings;
-			sourceTree = "<group>";
-		};
-		8984FB2021E8168400F81351 /* Properties */ = {
-			isa = PBXGroup;
-			children = (
-				8984FB2421E8168400F81351 /* PropertiesViewController.swift */,
-				8984FB2321E8168400F81351 /* PropertiesViewController.graphql */,
-				8984FB2121E8168400F81351 /* PropertyTableViewCell.swift */,
-				8984FB2221E8168400F81351 /* PropertyTableViewCell.graphql */,
-			);
-			path = Properties;
-			sourceTree = "<group>";
-		};
 		89BB032621DBDDC1002BE069 = {
 			isa = PBXGroup;
 			children = (
@@ -239,7 +106,6 @@
 				89BB036521DC0304002BE069 /* Info.plist */,
 				89BB035321DBFFB9002BE069 /* Sources */,
 				89BB035821DBFFB9002BE069 /* Tests */,
-				893D8AA421E4183100961B28 /* Example */,
 				89BB033121DBDDC1002BE069 /* Products */,
 				23EC41265F604FBC7634D440 /* Frameworks */,
 				48B6EAB2CA6AC69CB0267A7C /* Pods */,
@@ -251,7 +117,6 @@
 			children = (
 				89BB033021DBDDC1002BE069 /* EightBase.framework */,
 				89BB033921DBDDC1002BE069 /* EightBaseTests.xctest */,
-				893D8AA321E4183000961B28 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -304,26 +169,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		893D8AA221E4183000961B28 /* Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 893D8AB421E4183300961B28 /* Build configuration list for PBXNativeTarget "Example" */;
-			buildPhases = (
-				5EA0713FDD3DE2EB45A438E4 /* [CP] Check Pods Manifest.lock */,
-				893D8A9F21E4183000961B28 /* Sources */,
-				893D8AA021E4183000961B28 /* Frameworks */,
-				893D8AA121E4183000961B28 /* Resources */,
-				89412ADF21E6BC6C007FA37C /* Generate Apollo GraphQL API */,
-				860D366DDDBEC7E1C9C7CD60 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Example;
-			productName = Example;
-			productReference = 893D8AA321E4183000961B28 /* Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 		89BB032F21DBDDC1002BE069 /* EightBase */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89BB034421DBDDC1002BE069 /* Build configuration list for PBXNativeTarget "EightBase" */;
@@ -373,9 +218,6 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = 8base;
 				TargetAttributes = {
-					893D8AA221E4183000961B28 = {
-						CreatedOnToolsVersion = 10.1;
-					};
 					89BB032F21DBDDC1002BE069 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -400,32 +242,11 @@
 			targets = (
 				89BB032F21DBDDC1002BE069 /* EightBase */,
 				89BB033821DBDDC1002BE069 /* EightBaseTests */,
-				893D8AA221E4183000961B28 /* Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		893D8AA121E4183000961B28 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				893D8AB021E4183300961B28 /* LaunchScreen.storyboard in Resources */,
-				8984FB2521E8168400F81351 /* ListingsViewController.graphql in Resources */,
-				8984FB1621E80D6000F81351 /* BrokersViewController.graphql in Resources */,
-				8984FB0421E7E23D00F81351 /* schema.json in Resources */,
-				8984FB1221E80D6000F81351 /* CustomersViewController.graphql in Resources */,
-				8984FB2B21E8168400F81351 /* PropertiesViewController.graphql in Resources */,
-				8984FB2821E8168400F81351 /* ListingTableViewCell.graphql in Resources */,
-				8984FB1521E80D6000F81351 /* CustomerTableViewCell.graphql in Resources */,
-				893D8AAD21E4183300961B28 /* Assets.xcassets in Resources */,
-				893D8AAB21E4183100961B28 /* Main.storyboard in Resources */,
-				893D8AB621E41DA000961B28 /* Auth0.plist in Resources */,
-				8984FB2A21E8168400F81351 /* PropertyTableViewCell.graphql in Resources */,
-				8984FB1721E80D6000F81351 /* BrokerTableViewCell.graphql in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		89BB032E21DBDDC1002BE069 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,28 +266,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5EA0713FDD3DE2EB45A438E4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6695942EABDC138A6D596485 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -496,56 +295,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EightBaseTests/Pods-EightBaseTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		860D366DDDBEC7E1C9C7CD60 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
-				"${BUILT_PRODUCTS_DIR}/ApolloAlamofire/ApolloAlamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework",
-				"${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework",
-				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApolloAlamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Auth0.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleKeychain.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		89412ADF21E6BC6C007FA37C /* Generate Apollo GraphQL API */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Generate Apollo GraphQL API";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=GraphQL/schema.json --passthroughCustomScalars API.swift\n";
 		};
 		8AA75682B59891FC4C189AC8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -594,24 +343,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		893D8A9F21E4183000961B28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				893D8AA821E4183100961B28 /* DashboardViewController.swift in Sources */,
-				8984FB1821E80D6000F81351 /* BrokersViewController.swift in Sources */,
-				8984FB2921E8168400F81351 /* PropertyTableViewCell.swift in Sources */,
-				8984FB2721E8168400F81351 /* ListingsViewController.swift in Sources */,
-				8984FB2621E8168400F81351 /* ListingTableViewCell.swift in Sources */,
-				8984FB1421E80D6000F81351 /* CustomersViewController.swift in Sources */,
-				893D8AA621E4183100961B28 /* AppDelegate.swift in Sources */,
-				8984FB2C21E8168400F81351 /* PropertiesViewController.swift in Sources */,
-				8984FB1921E80D6000F81351 /* BrokerTableViewCell.swift in Sources */,
-				8984FB1321E80D6000F81351 /* CustomerTableViewCell.swift in Sources */,
-				8984FB1A21E812A500F81351 /* API.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		89BB032C21DBDDC1002BE069 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -638,64 +369,7 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		893D8AA921E4183100961B28 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				893D8AAA21E4183100961B28 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		893D8AAE21E4183300961B28 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				893D8AAF21E4183300961B28 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		893D8AB221E4183300961B28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B920F5B4B47BE8B18D945D4 /* Pods-Example.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.8base.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		893D8AB321E4183300961B28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28C4E1FB7D2369CA73BDC277 /* Pods-Example.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.8base.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		89BB034221DBDDC1002BE069 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -921,15 +595,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		893D8AB421E4183300961B28 /* Build configuration list for PBXNativeTarget "Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				893D8AB221E4183300961B28 /* Debug */,
-				893D8AB321E4183300961B28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		89BB032A21DBDDC1002BE069 /* Build configuration list for PBXProject "EightBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
