@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        EightBase.enableBiometrics(withTitle: "Touch ID / Face ID Login")
         EightBase.logout()
         let apiToken: String? = nil//"__API_TOKEN__"
-        EightBase.auth(with: "https://prestaging-api.8basedev.com/cjs9epbwo000001rzdvkor9si", apiToken: apiToken) { result in
+        EightBase.auth(with: "https://api.8base.com/ck3w4ep18000207leam9ahwkf", apiToken: apiToken) { result in
             switch(result) {
             case .success():
                 print("Successfully authentificated")
